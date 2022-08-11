@@ -1,0 +1,33 @@
+.team {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        @include manrope155;
+        text-align: center;
+        span {
+            background: radial-gradient(109.91% 2942.09% at 77.17% 0%, #7B51F1 0%, #47EDCF 73.35%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .teamCards {
+        margin-top: 68px;
+        display: flex;
+        gap: 19px;
+        @include manrope155;
+        div {
+            flex: 1 1 0;
+            h4 {
+                margin-top: 63px;
+                font-size: 40px;
+                line-height: 55px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 48px;
+            }
+        }
+    }
+}

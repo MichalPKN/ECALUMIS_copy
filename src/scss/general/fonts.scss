@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/Manrope/Manrope-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope-ExtraLight';
+    src: url('fonts/Manrope/static/Manrope-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope-Light';
+    src: url('fonts/Manrope/static/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('fonts/Manrope/static/Manrope-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url('fonts/Manrope/static/Manrope-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Syne-Bold';
+    src: url('fonts/Syne/static/Syne-Bold.ttf');
+}
+
+@mixin manrope155 {
+    font-family: 'Manrope-ExtraLight';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 72px;
+    line-height: 82px;
+    color: #00103A;
+}
+
+@mixin syne {
+    font-family: 'Syne-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #01073C;
+}

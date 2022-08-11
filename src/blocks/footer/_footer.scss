@@ -1,0 +1,22 @@
+.footer {
+    background-color: #F4F4F4;
+    padding: 49px 0 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #5353531A;
+    h5 {
+        @include syne;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.2em;
+        color: #00103A;
+    }
+    p {
+        @include manrope155;
+        font-size: 14px;
+        line-height: 19px;
+        position: absolute;
+        left: 64px;
+    }
+}

@@ -1,0 +1,29 @@
+.section2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        @include manrope155();
+        font-size: 130px;
+        line-height: 135px;
+    }
+    span {
+        background: radial-gradient(109.91% 2942.09% at 77.17% 0%, #7B51F1 0%, #47EDCF 73.35%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .dokonalosti {
+        text-align: right;
+    }
+    p {
+        margin-top: 61px;
+        float: right;
+        @include manrope155();
+        font-size: 24px;
+        line-height: 33px;
+        max-width: 600px;
+        text-align: right;
+    }
+}

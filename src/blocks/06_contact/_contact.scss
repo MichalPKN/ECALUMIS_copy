@@ -1,0 +1,52 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 369px;
+    .container {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        .contactCard {
+            flex: 1 1 0;
+            background: white;
+            padding: 70px 96px 80px 96px;
+            border-radius: 64px;
+            h4 {
+                @include manrope155;
+                font-size: 40px;
+                line-height: 55px;
+            }
+            p {
+                margin-top: 64px;
+                @include manrope155;
+                font-size: 24px;
+                line-height: 33px;
+            }
+        }
+        .first {
+            P,
+            h4 {
+                color: white;
+            }
+            background: radial-gradient(225.1% 3858.7% at 128.79% -22.53%, #A788FF 0%, #7AFBE4 100%)
+        }
+        .second {
+            position: relative;
+            background-clip: padding-box;
+            border: solid 1px transparent;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                margin: -1px;
+                border-radius: inherit;
+                background: radial-gradient(90.55% 1807.16% at 67.43% 9.45%, #A788FF 0%, #7AFBE4 100%);
+            }
+        }
+    }
+}
