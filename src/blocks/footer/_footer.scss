@@ -13,7 +13,8 @@
         color: #00103A;
     }
     p {
-        @include manrope155;
+        @include manrope-regular;
+        font-weight: 500;
         font-size: 14px;
         line-height: 19px;
         position: absolute;

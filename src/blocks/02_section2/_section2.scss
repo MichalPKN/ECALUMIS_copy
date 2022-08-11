@@ -20,9 +20,7 @@
     p {
         margin-top: 61px;
         float: right;
-        @include manrope155();
-        font-size: 24px;
-        line-height: 33px;
+        @include manrope-light();
         max-width: 600px;
         text-align: right;
     }

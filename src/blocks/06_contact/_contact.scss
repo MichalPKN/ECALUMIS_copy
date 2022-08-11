@@ -13,13 +13,13 @@
             padding: 70px 96px 80px 96px;
             border-radius: 64px;
             h4 {
-                @include manrope155;
+                @include manrope-regular;
                 font-size: 40px;
                 line-height: 55px;
             }
             p {
                 margin-top: 64px;
-                @include manrope155;
+                @include manrope-regular;
                 font-size: 24px;
                 line-height: 33px;
             }
