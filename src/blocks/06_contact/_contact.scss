@@ -5,10 +5,13 @@
     margin-top: 260px;
     .container {
         display: flex;
+        justify-content: center;
         gap: 16px;
         width: 100%;
+        flex-wrap: wrap;
         .contactCard {
-            flex: 1 1 0;
+            max-width: 541px - 96px - 96px;
+            flex: 0 0 100%;
             background: white;
             padding: 70px 96px 80px 96px;
             border-radius: 64px;

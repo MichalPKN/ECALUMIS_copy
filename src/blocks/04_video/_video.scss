@@ -3,4 +3,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .container {
+        @include windowMax1440p {
+            max-width: 1024px;
+            iframe {
+                width: 960px;
+                height: 540px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1175px) {
+            max-width: 1024px;
+            iframe {
+                width: 768px;
+                height: 432px;
+            }
+        }
+    }
 }
