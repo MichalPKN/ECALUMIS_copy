@@ -11,7 +11,7 @@
 }
 
 @mixin windowMax1440p {
-    @media (min-width: 768px) and (max-width: 1440px) {
+    @media (min-width: 954px) and (max-width: 1440px) {
         @content;
     }
 }
