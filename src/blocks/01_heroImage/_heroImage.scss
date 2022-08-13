@@ -13,7 +13,6 @@
         @include manrope155();
         max-width: 817px;
         text-align: center;
-        @include windowMax1440p {}
         span {
             background: radial-gradient(109.91% 2942.09% at 77.17% 0%, #7B51F1 0%, #47EDCF 73.35%);
             background-clip: text;
@@ -47,5 +46,16 @@
             }
         }
     }
-    @include mobileMax952p {}
+    @include mobileMax952p {
+        h1 {
+            @include manrope-light;
+            font-size: 45px;
+            line-height: 50px;
+        }
+        p {
+            text-align: center;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
 }

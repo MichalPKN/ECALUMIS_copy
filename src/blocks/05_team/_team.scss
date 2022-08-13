@@ -36,4 +36,23 @@
             }
         }
     }
+    @include mobileMax952p {
+        height: auto;
+        h3 {
+            @include manrope-light;
+            font-size: 43px;
+            line-height: 48px;
+        }
+        .teamCards {
+            display: block;
+            div {
+                padding-top: 63px;
+            }
+            &:last-of-type {
+                h4 {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
 }

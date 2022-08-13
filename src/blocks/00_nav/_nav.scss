@@ -57,4 +57,10 @@ nav {
             }
         }
     }
+    @include mobileMax952p {
+        padding: 34px 0 30px 0;
+        a {
+            display: none;
+        }
+    }
 }

@@ -52,4 +52,27 @@
             }
         }
     }
+    @include mobileMax952p {
+        .container {
+            width: auto;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-content: center;
+            gap: 30px;
+            .contactCard {
+                min-height: 200px;
+                padding: 40px 66px 50px 66px;
+                h4 {
+                    width: 400px;
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
 }

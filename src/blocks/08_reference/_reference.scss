@@ -27,4 +27,11 @@
             }
         }
     }
+    @include mobileMax952p {
+        .container h3 {
+            @include manrope-light;
+            font-size: 42px;
+            line-height: 48px;
+        }
+    }
 }
