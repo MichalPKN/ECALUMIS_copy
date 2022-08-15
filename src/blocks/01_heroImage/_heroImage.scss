@@ -41,9 +41,11 @@
             background: white;
             padding: 22px 68px;
             transition: 0.3s;
-            &:hover {
-                color: white;
-                background-color: #00000000;
+            @media (hover: hover) {
+                &:hover {
+                    color: white;
+                    background-color: #00000000;
+                }
             }
         }
     }
