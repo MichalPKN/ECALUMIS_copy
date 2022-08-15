@@ -1,16 +1,12 @@
 .logos {
     .container {
-        margin-top: 240px;
+        margin-top: 20vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        //justify-content: space-between;
         opacity: 0.5;
         flex-wrap: wrap;
         column-gap: 110px;
         row-gap: 70px;
-        img {
-            //flex-basis: 100%;
-        }
     }
 }

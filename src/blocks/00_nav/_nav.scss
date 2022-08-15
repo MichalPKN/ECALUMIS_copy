@@ -3,19 +3,24 @@ body {
 }
 
 .backgroundVideo {
-    margin-top: -34px;
     position: fixed;
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
     z-index: -10;
     display: flex;
     align-items: center;
     justify-content: center;
+    video {
+        margin-top: 64px;
+        height: 120vh;
+        @include mobileMax952p {
+            width: calc((100vw - 48px) / 670 * 1920);
+        }
+    }
 }
 
 section {
     max-width: 100vw;
-    // overflow: hidden;
 }
 
 nav {
