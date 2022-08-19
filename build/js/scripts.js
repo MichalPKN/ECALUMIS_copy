@@ -5480,7 +5480,25 @@ return PhotoSwipeUI_Default;
 
 
 //=include vendor/*.js
-//=include ../blocks/**/*.js
+let button = document.querySelector(".heroImage .container a");
+
+button.addEventListener("click", (e) => {
+    smoother.scrollTo(".section3", true);
+});
+
+gsap.from(".heroImage .container", {
+    duration: 1.8,
+    y: 150,
+    opacity: 0,
+    ease: "power4"
+})
+gsap.from(".reference .container", {
+    scrollTrigger: ".reference .container",
+    duration: 2,
+    y: 150,
+    opacity: 0,
+    ease: "power4"
+})
 
 // tablesWrap();
 // iframesWrap();
@@ -5523,15 +5541,25 @@ return PhotoSwipeUI_Default;
 // }
 /*gsap.registerPlugin(ScrollTrigger, ScrollSmoother);*/
 // create the scrollSmoother before your scrollTriggers
-/*let smoother = ScrollSmoother.create({
+let smoother = ScrollSmoother.create({
     wrapper: "#smooth-wrapper",
     content: "#smooth-content",
-    // normalizeScroll: true,   
+    //normalizeScroll: true,
     ignoreMobileResize: true,
-    // smooth: 0.5,               // how long (in seconds) it takes to "catch up" to the native scroll position
-    // effects: true,           // looks for data-speed and data-lag attributes on elements
-    smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-});*/
+    //smooth: 0.5, // how long (in seconds) it takes to "catch up" to the native scroll position
+    effects: true, // looks for data-speed and data-lag attributes on elements
+    //smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+});
+
+ScrollTrigger.matchMedia({
+    "(min-width: 954px)": function() {
+        smoother.effects(".infoItem, .infoItem", {
+            speed: 1,
+            lag: (i) => i * 0.2
+        })
+    },
+    "(max-width: 953px)": function() {},
+});
 
 
 
