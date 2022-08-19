@@ -1,5 +1,8 @@
 gsap.from(".reference .container", {
-    scrollTrigger: ".reference .container",
+    scrollTrigger: {
+        trigger: ".reference .container",
+        markers: true
+    },
     duration: 2,
     y: 150,
     opacity: 0,
