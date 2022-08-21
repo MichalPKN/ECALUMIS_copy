@@ -5492,15 +5492,25 @@ gsap.from(".heroImage .container", {
     opacity: 0,
     ease: "power4"
 })
-gsap.from(".reference .container", {
+gsap.fromTo(".reference .container", {
+    y: 200,
+    opacity: 0,
+}, {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+
     scrollTrigger: {
         trigger: ".reference .container",
-        markers: true
-    },
-    duration: 2,
-    y: 150,
-    opacity: 0,
-    ease: "power4"
+        start: "top 80%",
+        end: "bottom bottom",
+        ease: "power3.inOut",
+        once: true,
+        // toggleActions: "restart none none none",
+        // scrub: true,
+        // onEnter onLeave onEnterBack onLeaveBack
+        // markers: true,
+    }
 })
 
 // tablesWrap();
