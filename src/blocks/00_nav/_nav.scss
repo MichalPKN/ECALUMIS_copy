@@ -41,7 +41,7 @@ nav {
         letter-spacing: 0.2em;
         color: #00103A;
     }
-    a {
+    .contact-button {
         text-decoration: none;
         position: absolute;
         right: 32px;
@@ -62,10 +62,58 @@ nav {
             }
         }
     }
+    .menu-icon {
+        display: none;
+        position: absolute;
+        right: 33px;
+        justify-content: center;
+        align-items: center;
+        .hidden {
+            display: none;
+        }
+    }
+    .menu-items {
+        z-index: -1;
+        display: none;
+        position: absolute;
+        top: 0;
+        padding-top: 30vh;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 25vh); //change to 75vh
+        background-color: #F4F4F4;
+        flex-direction: column;
+        align-items: center;
+        @include manrope-regular;
+        font-size: 24px;
+        line-height: 48px;
+        gap: 38px;
+        transition: 0.4s;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #00103A;
+        }
+    }
     @include mobileMax952p {
         padding: 34px 0 30px 0;
-        a {
+        .contact-button {
             display: none;
+            &.second {
+                display: block;
+                right: auto;
+                bottom: 48px;
+                @include syne();
+            }
+        }
+        .menu-icon {
+            display: flex;
+        }
+        .menu-items {
+            display: flex;
+            &.active {
+                right: 0;
+            }
         }
     }
 }
