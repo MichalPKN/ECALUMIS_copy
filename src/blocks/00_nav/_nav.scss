@@ -65,13 +65,41 @@
             }
         }
         .menu-icon {
+            cursor: pointer;
             display: none;
             position: absolute;
             right: 33px;
             justify-content: center;
             align-items: center;
+            width: 35px;
+            height: 35px;
             .hidden {
                 display: none;
+            }
+            .line {
+                position: relative;
+                width: 32px;
+                height: 2px;
+                background-color: #00103A;
+                transition: all 0.3s ease-in-out;
+                transform: translateY(-4px);
+                &::before {
+                    content: '';
+                    position: absolute;
+                    transform: translateY(8px);
+                    width: 32px;
+                    height: 2px;
+                    background-color: #00103A;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &.active {
+                .line {
+                    transform: rotate(45deg);
+                    &::before {
+                        transform: rotate(-90deg);
+                    }
+                }
             }
         }
         .menu-items {
@@ -104,7 +132,7 @@
                 &.second {
                     display: block;
                     right: auto;
-                    bottom: 100px;
+                    bottom: 110px;
                     @include syne();
                 }
             }
